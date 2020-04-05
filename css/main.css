@@ -15,21 +15,26 @@
 /* Universal selector - clear browser defaults */
 * {
     /* set box sizing to border-box */
+    box-sizing: border-box;
     /* clear margin and padding */
+    margin: 0;
+    padding: 0;
 }
 
 /* Body Styles */
 body {
-
     /* Set font properties (size, color, family) */
+    font-family: Arial, Helvetica, sans-serif;
     /* Create some spacing between each line of page */
+    line-height: 1.7em;
 
 }
 
 /* Container is a div in each section, which wraps content to center */
 .container {
     /* Set the max width as percentage and center with margin */
-   
+    max-width: 70%;
+    margin: 3px auto;
    /* This hides scrollbars if content is too big for container and also clears floats (for branding and nav) */
     overflow: hidden;
 }
@@ -37,23 +42,36 @@ body {
 /* All the anchor tags on the page */
 a {
     /* Remove underlining and set text color */
+    text-decoration: none;
+    color:white;
 }
 
 /* All the anchor tags in hover state */
 a:hover {
     /* Set the text color */
+    color:white;
 }
 
 /* Base button style for both the dark and light buttons */
 button {
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 /* Dark button (adds on to styles of button) */
 .btn-dark {
+    background: #523249;
+    color:white;
 }
 
 /* Light button (adds on to styles of button) */
 .btn-light {
+    background: #DBEBC0;
+    color: #322B25;
 }
 
 /*******************************************************
@@ -63,39 +81,56 @@ button {
 /* Header section */
 header {
     /* Set background, height, padding and border */
+    background-color:#322B25;
+    padding: 40px 20px;
+    border-color: #DBEBC0;
 }
 
 /* Galactic Coffee logo */
 header .brand {
     /* Position by floating left */
+    float: left;
 }
 
 /* Main navigation */
 header nav {
     /* Position by floating right (no need to clear float, container is overflow:hidden which takes care of this) */
+    float: right;
 }
 
 /* Navigation item */
 header li {
     /* Set display to inline-block (no need to float if we do this) */
+    display:inline;
     /* Create space between each item by setting padding */
+    padding:20px;
 }
 
 /* Selector targets the first word of the brand "Galactic" */
 header .brand em {
     /* Set the text color */
+    color:#dbebc0;
 }
 
 /* Banner - contains tagline for site with background image */
 #banner {
     /* Set the minimum height */
+    min-height: 300px;
     /* Center text */
+    text-align: center;
+    color:white;
     /* Place the appropriate background image - should start on right top and cover the area */
+    background-image: url('../images/coffee-beans.jpg');
+    background-position: right top;
+    background-size: cover;
+
 }
 
 /* The first sentence in the banner */
 #banner h2 {
     /* Set to a large font size and set margins for positioning properly */
+    font-size:48px;
+    margin:20px;
 }
 
 /* The remainder of the text in banner */
