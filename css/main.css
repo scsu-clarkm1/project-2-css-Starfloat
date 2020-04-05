@@ -27,6 +27,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* Create some spacing between each line of page */
     line-height: 30px;
+    background-color: #F4F4F4; 
 
 }
 
@@ -64,6 +65,7 @@ button {
 
 /* Dark button (adds on to styles of button) */
 .btn-dark {
+    margin-bottom: 100px;
     background: #523249;
     color:white;
 }
@@ -138,7 +140,8 @@ header .brand em {
 #banner p {
     /* Set font size and position property with margins */
     font-size: 16px;
-    margin: 50px;
+    margin: 30px;
+    font-weight: 600;
 }
 
 /*******************************************************
@@ -156,10 +159,9 @@ header .brand em {
 /* Text for subcription section */
 #subscription h2 {
     /* Float left and set the margin */
-    font-size: 20px;
     float: left;
     color: white;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 /* Subscription form */
@@ -172,9 +174,11 @@ header .brand em {
 #subscription input[type="email"] {
     /* Set display to inline-block, height, width, padding */
     display: inline-block;
-    height: 35px;
+    height: 37px;
     width: 200px;
-
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 /*******************************************************
@@ -184,10 +188,13 @@ header .brand em {
 /* Amenities section */
 #amenities {
     /* Set margin */
-    margin: 20px;
+    margin: auto;
     /* Set text color and align center */
     color: #322B25;
     text-align: center;
+    font-weight: 400;
+    padding-left: 125px;
+    padding-top: 10px;
 }
 
 /* Feature box within the amenities (there are 3 in total) */
@@ -197,7 +204,7 @@ header .brand em {
     /* Set each width as percentage */
     width: 30%;
     /* Set padding within each feature */
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Feature image */
